@@ -1,0 +1,13 @@
+TUTORIAL EMBARCADOS
+
+1) Instale MingW:
+
+sudo apt-get install gcc-mingw-w64
+
+2) Gerando os arquivos objetos:
+
+/usr/bin/i686-w64-mingw32-gcc -I Inc/ -I Lib/Expinc -c Src/dllLoader.c -o Obj/dllLoader.o 
+
+3) Indexando-os em um arquivo do tipo .lib:
+
+ar -rc interface.lib Obj/dllLoader.o 

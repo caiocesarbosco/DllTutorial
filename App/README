@@ -1,0 +1,7 @@
+TUTORIAL EMBARCADOS
+
+1) sudo apt-get install gcc-mingw-w64
+
+2) /usr/bin/i686-w64-mingw32-gcc -I Lib/interface/Expinc -I Lib/dll/Expinc main.c -L Lib/interface -linterface -o main.exe
+
+3) ./main.exe
